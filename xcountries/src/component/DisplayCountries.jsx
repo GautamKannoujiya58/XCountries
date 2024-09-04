@@ -24,7 +24,7 @@ function DisplayCountries() {
   }, []);
 
   // console.log("CountryData >>>", countryData);
-  console.log("ERRRRRRRR >>>>>>", error);
+  // console.log("ERRRRRRRR >>>>>>", error);
   return (
     <>
       {!error ? (
