@@ -4,7 +4,7 @@ function DisplayCountries() {
   const [countryData, setCountryData] = useState([]);
   const [error, setError] = useState(null);
   const fetchData = () => {
-    fetch(`https://xcountries-backend.azurewebsites.net/l`)
+    fetch(`https://xcountries-backend.azurewebsites.net/all`)
       .then((res) => {
         if (!res.ok) {
           throw new Error(`HTTP error! Status:${res.status}`);
