@@ -6,7 +6,7 @@ function DisplayCountries() {
     fetch(`https://xcountries-backend.azurewebsites.net/all`)
       .then((res) => res.json())
       .then((data) => setCountryData(data))
-      .catch((error) => console.log("Error >>>", error));
+      .catch((error) => console.log("Error >>>", error.message));
   };
   useEffect(() => {
     fetchData();
